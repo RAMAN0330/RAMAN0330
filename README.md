@@ -1,5 +1,5 @@
 # 💫 About Me:
-Hi ! 👋<br><br>A Computer Science Student 🚀 from GURUGRAM, India.<br><br>About Me!<br><br>👨🏽‍💻 Experience in C++  and Python - NumPy, Pandas, Matplotlib, Seaborn, Scikit-LEARN.<br>💼 Bachelor of Science - BS, Computer Science Hons. from the University Of Delhi.<br><br>💼 Master of Science - MS, Data Science from the Vellore Institute of Technology, Chennai.<br>📫 Email me at Ram.ansh030@gmail.com.
+Hi ! 👋<br><br>A Computer Science Student 🚀 from GURUGRAM, India.<br><br>About Me!<br><br>👨🏽‍💻 Experience in C++  and Python - NumPy, Pandas, Matplotlib, Seaborn, Scikit-LEARN.<br>💼 Bachelor of Science - BS, Computer Science Hons. from the University Of Delhi.<br>💼 Pursuing Master of Science - MS, Data Science from the Vellore Institute of Technology, Chennai.<br>📫 Email me at Ram.ansh030@gmail.com.
 
 
 ## 🌐 Socials:
