@@ -19,3 +19,9 @@ Hi ! 👋<br><br>A Data Science Student 🚀 from GURUGRAM, India.<br><br><br>�
 ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
 
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/raman0330/raman0330/gitascii/profiles/default/dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/raman0330/raman0330/gitascii/profiles/default/light.svg">
+  <img alt="GitAscii Profile" src="https://raw.githubusercontent.com/raman0330/raman0330/gitascii/profiles/default/dark.svg" width="100%">
+</picture>
