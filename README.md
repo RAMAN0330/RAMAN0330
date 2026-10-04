@@ -182,69 +182,41 @@ The workflow below connects data ingestion, lakehouse engineering, analytics, ma
 
 ```mermaid
 flowchart TD
-    %% Sources and ingestion
-    subgraph S["01 · Sources & Ingestion"]
-        A["🗄️ Data Sources<br/>APIs · SQL/NoSQL · Files · Events"]
-        B["🐍 Ingestion & Orchestration<br/>Python · SQL · PySpark"]
-        A --> B
-    end
+    A["Data Sources: APIs, Databases, Files"]
+    B["Python, SQL, PySpark"]
+    C[("Amazon S3")]
+    D["Databricks + Apache Spark"]
+    E["Delta Lake: Bronze, Silver, Gold"]
+    F["Data Quality and Transformation"]
+    G["Analytics and Feature Engineering"]
+    H["Machine Learning and Forecasting"]
+    I["GenAI: Embeddings, RAG, LangChain"]
+    J["FastAPI Applications"]
+    K["Docker and Cloud Deployment"]
+    L["Monitoring and Model Drift"]
 
-    %% Data platform
-    subgraph D["02 · Data Engineering & Lakehouse"]
-        C[("☁️ Amazon S3<br/>Raw / Landing Data")]
-        E["⚙️ Databricks + Apache Spark<br/>Distributed Processing"]
-        F["🧱 Delta Lake<br/>Bronze → Silver → Gold"]
-        G["🔎 Data Quality & Modeling<br/>Validation · Deduplication · Tests"]
-        C --> E --> F --> G
-    end
+    A --> B --> C
+    C <--> D
+    D --> E --> F
+    F --> G --> H
+    F --> I
+    H --> J
+    I --> J
+    J --> K --> L
+    L -.-> B
+    L -.-> H
 
-    %% Analytics and ML
-    subgraph M["03 · Analytics & Machine Learning"]
-        H["📊 Analytics & Feature Engineering<br/>SQL · Pandas · PySpark"]
-        I["🧪 Model Training & Evaluation<br/>scikit-learn · PyTorch / TensorFlow"]
-        J["📈 Forecasting & Model Outputs<br/>Time Series · Metrics · Predictions"]
-        H --> I --> J
-    end
+    classDef data fill:#172554,stroke:#60A5FA,color:#fff
+    classDef platform fill:#312E81,stroke:#A5B4FC,color:#fff
+    classDef analytics fill:#164E63,stroke:#22D3EE,color:#fff
+    classDef ai fill:#4C1D95,stroke:#C4B5FD,color:#fff
+    classDef production fill:#14532D,stroke:#4ADE80,color:#fff
 
-    %% Generative AI
-    subgraph AI["04 · Generative AI Applications"]
-        K["📚 Documents & Knowledge Sources"]
-        L["🔍 Chunking · Embeddings · Retrieval<br/>RAG · Vector Search"]
-        N["🤖 LLM Orchestration<br/>LangChain · Prompt / Tool Flow"]
-        K --> L --> N
-    end
-
-    %% Production and feedback
-    subgraph P["05 · Production, MLOps & Observability"]
-        O["🔌 Application & API Layer<br/>FastAPI · Python"]
-        Q["🚀 Deploy & Run<br/>Docker · Cloud Services"]
-        R["📡 Monitor & Improve<br/>Logs · Data / Model Drift · Feedback"]
-        O --> Q --> R
-    end
-
-    B --> C
-    G --> H
-    G --> K
-    J --> O
-    N --> O
-    R -. "Pipeline and model feedback" .-> B
-    R -. "Retraining / evaluation feedback" .-> I
-
-    classDef source fill:#172554,stroke:#60A5FA,color:#FFFFFF,stroke-width:1.5px
-    classDef ingest fill:#1E293B,stroke:#94A3B8,color:#FFFFFF,stroke-width:1.5px
-    classDef storage fill:#422006,stroke:#F59E0B,color:#FFFFFF,stroke-width:2px
-    classDef platform fill:#312E81,stroke:#A5B4FC,color:#FFFFFF,stroke-width:1.5px
-    classDef analytics fill:#164E63,stroke:#22D3EE,color:#FFFFFF,stroke-width:1.5px
-    classDef genai fill:#4C1D95,stroke:#C4B5FD,color:#FFFFFF,stroke-width:1.5px
-    classDef production fill:#14532D,stroke:#4ADE80,color:#FFFFFF,stroke-width:1.5px
-
-    class A,K source
-    class B ingest
-    class C storage
-    class E,F,G platform
-    class H,I,J analytics
-    class L,N genai
-    class O,Q,R production
+    class A,B data
+    class C,D,E,F platform
+    class G,H analytics
+    class I ai
+    class J,K,L production
 
 ```
 
