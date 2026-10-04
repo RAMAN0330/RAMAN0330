@@ -176,50 +176,6 @@ I'm a technology enthusiast focused on building intelligent systems that transfo
 
 ---
 
-## `04` — End-to-End Data & AI/ML Engineering Workflow
-
-The workflow below connects data ingestion, lakehouse engineering, analytics, machine learning, and GenAI into one production lifecycle. The technology badges beneath the diagram show the core tools used across these stages.
-
-```mermaid
-flowchart TD
-    A["Data Sources: APIs, Databases, Files"]
-    B["Python, SQL, PySpark"]
-    C[("Amazon S3")]
-    D["Databricks + Apache Spark"]
-    E["Delta Lake: Bronze, Silver, Gold"]
-    F["Data Quality and Transformation"]
-    G["Analytics and Feature Engineering"]
-    H["Machine Learning and Forecasting"]
-    I["GenAI: Embeddings, RAG, LangChain"]
-    J["FastAPI Applications"]
-    K["Docker and Cloud Deployment"]
-    L["Monitoring and Model Drift"]
-
-    A --> B --> C
-    C <--> D
-    D --> E --> F
-    F --> G --> H
-    F --> I
-    H --> J
-    I --> J
-    J --> K --> L
-    L -.-> B
-    L -.-> H
-
-    classDef data fill:#172554,stroke:#60A5FA,color:#fff
-    classDef platform fill:#312E81,stroke:#A5B4FC,color:#fff
-    classDef analytics fill:#164E63,stroke:#22D3EE,color:#fff
-    classDef ai fill:#4C1D95,stroke:#C4B5FD,color:#fff
-    classDef production fill:#14532D,stroke:#4ADE80,color:#fff
-
-    class A,B data
-    class C,D,E,F platform
-    class G,H analytics
-    class I ai
-    class J,K,L production
-
-```
-
 <p align="center">
   <img src="https://skillicons.dev/icons?i=python,postgres,fastapi,aws,docker,git,github" alt="Python, PostgreSQL, FastAPI, AWS, Docker, Git, and GitHub icons"/>
 </p>
@@ -236,7 +192,7 @@ flowchart TD
 
 I focus on reliable data contracts, validated transformations, reproducible experiments, meaningful model evaluation, secure APIs, and observable production systems. The aim is to make the full lifecycle traceable—from source data to deployed analytics and AI capabilities.
 
-## `05` — GitHub Analytics
+## `04` — GitHub Analytics
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=RAMAN0330&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true" height="165" alt="GitHub contribution statistics"/>
@@ -249,7 +205,7 @@ I focus on reliable data contracts, validated transformations, reproducible expe
 
 ---
 
-## `06` — Beyond the Code
+## `05` — Beyond the Code
 
 I enjoy exploring emerging technologies, experimenting with new ideas, and understanding how software, data, and intelligence can work together to solve practical problems.
 
