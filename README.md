@@ -29,7 +29,7 @@ I'm a technology enthusiast focused on building intelligent systems that transfo
 - Continuously learning, experimenting, and engineering solutions to real-world problems.
 
 **Education**
-- 🎓 M.S. in Data Science — Vellore Institute of Technology, Chennai *(Pursuing)*
+- 🎓 M.S. in Data Science — Vellore Institute of Technology, Chennai
 - 🎓 B.S. in Computer Science (Hons.) — University of Delhi
 
 📍 Gurugram, India | 📧 [Ram.ansh030@gmail.com](mailto:Ram.ansh030@gmail.com)
